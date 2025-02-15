@@ -1,0 +1,12 @@
+// -------------------------------- Подключние локального шрифта
+// FoglihtenNo06
+@font-face {
+	font-family: 'FoglihtenNo06';
+	src: url('../../assets/fonts/FoglihtenNo06.woff') format('woff'), url('../../assets/fonts/FoglihtenNo06.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// -------------------------------- Подключение шрифтов с Google Fonts
+// Montserrat
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);

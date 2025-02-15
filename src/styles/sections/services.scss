@@ -1,0 +1,126 @@
+@use "/src/styles/assets/variables.scss" as *;
+
+.services {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	&__backgrounds {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&__background-block {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(148, 148, 148, 0.2);
+		z-index: 2;
+	}
+	&__background-image {
+		position: absolute;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		opacity: 0;
+	}
+	&__wrapper {
+		z-index: 5;
+		max-width: $blockWidth;
+		width: 100%;
+	}
+	&__title {
+		color: #263742;
+	}
+	&__subtitle {
+		line-height: $subTitleLineHeight;
+	}
+	&__body {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+		padding: 30px 0px;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		padding: 60px 40px;
+		position: relative;
+	}
+	&__item-backgrounds {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&__item-background-block {
+		position: absolute;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+	&__item-background-image {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+	&__item-title {
+		color: #FFFFFF;
+		text-align: center;
+		font-weight: 400;
+		font-size: $cardTitleFontSize;
+		line-height: 140%;
+		font-family: $titleFont;
+		z-index: 1;
+	}
+	&__item-subtitle {
+		color: #FFFFFF;
+		text-align: center;
+		font-size: $cardDescriptionFontSize;
+		z-index: 1;
+	}
+}
+
+
+// Индивидуальные цвета подложек для каждого блока
+.one-element-bg {
+	background-color: rgba(30, 53, 74, 0.7);
+}
+.two-element-bg {
+	background-color: rgba(51, 69, 49, 0.6);
+}
+.three-element-bg {
+	background-color: rgba(69, 57, 49, 0.8);
+}
+.four-element-bg {
+	background-color: rgba(66, 36, 15, 0.6);
+}
+.five-element-bg {
+	background-color: rgba(55, 53, 74, 0.8);
+}
+.six-element-bg {
+	background-color: rgba(122, 16, 0, 0.6);
+}
+.seven-element-bg {
+	background-color: rgba(27, 46, 27, 0.8);
+}
+
+
+
+

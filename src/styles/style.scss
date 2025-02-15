@@ -1,0 +1,26 @@
+// ----------------------------------------------------- ASSETS
+@use "/src/styles/assets/fonts.scss"; // Подключение шрифтов
+@use "/src/styles/assets/null.scss"; // Обнуляющие файлы
+@use "/src/styles/assets/common.scss"; // Общие стили
+@use "/src/styles/assets/variables.scss" as *; // Переменные
+
+// ----------------------------------------------------- SECTIONS
+@use "/src/styles/sections/header.scss"; // Шапка сайта
+@use "/src/styles/sections/about.scss"; // О нас
+@use "/src/styles/sections/services.scss"; // Услуги
+@use "/src/styles/sections/education.scss"; // Образование
+@use "/src/styles/sections/mac-cards.scss"; // Мак карты
+@use "/src/styles/sections/books.scss"; // Книги
+@use "/src/styles/sections/footer.scss"; // Подвал сайта (Контакты)
+
+// ----------------------------------------------------- MAIN ELEMENTS
+// Обертка тела сайта
+body {
+	font-family: $mainFont;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

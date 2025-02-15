@@ -1,0 +1,13 @@
+@use "/src/styles/assets/variables.scss" as *;
+
+.mac-cards {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #a6b89a;
+	&__wrapper	{
+		max-width: $blockWidth;
+		width: 100%;
+	}
+}
